@@ -2,7 +2,7 @@ import { createSignal, onMount, onCleanup, For, Show } from 'solid-js';
 import './WeddingInvitation.scss';
 
 
-import boy from './boy.jpeg';
+import boy from './boy.jpg';
 import cake from './cake.svg';
 import color1 from './color1.jpg'
 import color2 from './color2.jpg'
@@ -211,25 +211,25 @@ function WeddingInvitation() {
               <div class="block1-left animate-child">
                 <p class="child-question">Интересно, кто будет моим мужем, когда я выросту?</p>
                 <div class="photo-card">
-                  <img src=girl style={{width:"95%"}}/>
+                  <img src={girl} style={{width:"95%"}}/>
                   <p>Настя, 5 лет</p>
                 </div>
               </div>
               <div class="block1-right animate-child">
-                <img src=flower alt="Цветок" class="flower" />
+                <img src={flower} alt="Цветок" class="flower" />
               </div>
             </div>
 
             <div class="block1-middle animate-child">
               <h1>Н+С=</h1>
-              <img src=heart alt="Сердце"/>
+              <img src={heart} alt="Сердце"/>
             </div>
 
             <div class="block1-bottom">
-              <div class="smile-emoji animate-child"><img src={'smile.svg'}/></div>
+              <div class="smile-emoji animate-child"><img src={smile}/></div>
               <div class="block1-right-content animate-child">
                 <div class="photo-card">
-                  <img src=boy style={{width:"90%"}}/>
+                  <img src={boy} style={{width:"90%"}}/>
                   <p>Саша, 6 лет</p>
                 </div>
                 <p class="answer">Им буду я!</p>
@@ -256,7 +256,7 @@ function WeddingInvitation() {
 
             <p class="signature animate-child">С любовью,<br />Александр и Анастасия</p>
 
-            <img src=girl_boy alt="Мы вместе" class="couple-photo animate-child" />
+            <img src={girl_boy_svg} alt="Мы вместе" class="couple-photo animate-child" />
 
             <div class="countdown animate-child">
               <h1>До свадьбы осталось</h1>
@@ -281,7 +281,7 @@ function WeddingInvitation() {
             </div>
 
             <div class="photo-card2 animate-child">
-              <img girl_boy alt="Любовь" class="love-photo" />
+              <img src={girl_boy} alt="Любовь" class="love-photo" />
               <p> </p>
             </div>
           </div>
