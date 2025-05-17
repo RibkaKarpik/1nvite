@@ -3,7 +3,7 @@ import solidPlugin from 'vite-plugin-solid';
 
 export default defineConfig({
   plugins: [solidPlugin()],
-  base: '/invite/',
+  base: '/1nvite/',
   build: {
     outDir: 'dist',
   },
